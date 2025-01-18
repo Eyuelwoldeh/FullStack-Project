@@ -17,8 +17,8 @@ public class MovieService {
         return movieRepository.findAll();
     }
 
-    public Optional<Movie> singleMovie(ObjectId id) // Letting Java know with optional that we may not find a movie and it may return null
+    public Optional<Movie> singleMovie(String imdbId) // Letting Java know with optional that we may not find a movie and it may return null
     {
-        return movieRepository.findById(id);
+        return movieRepository.findMovieByImdbId(imdbId);
     }
 }
