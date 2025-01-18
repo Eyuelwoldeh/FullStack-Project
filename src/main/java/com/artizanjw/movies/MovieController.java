@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/movies")
+@RequestMapping("/api/v1/movies") // Append this to the existing localhost url in order to navigate to the output page.
 public class MovieController {
 
     @Autowired
