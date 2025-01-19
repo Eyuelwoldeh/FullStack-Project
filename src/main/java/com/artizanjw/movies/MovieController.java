@@ -9,6 +9,7 @@ import org.bson.types.ObjectId;
 import java.util.Optional;
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000") // Allow CORS requests from local host frontend
 @RestController
 @RequestMapping("/api/v1/movies") // Append this to the existing localhost url in order to navigate to the output page.
 public class MovieController {
