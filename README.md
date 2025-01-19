@@ -1,35 +1,53 @@
-# 🎬 Movies API
+# 🎬 Movie Gold V1
 
-A Spring Boot-based RESTful API for managing and exploring movie data, including movie details, genres, reviews, and more. This project leverages MongoDB for flexible and scalable data storage.
+A full-stack application for managing and exploring movie data, including movie details, genres, reviews, and trailers. This project combines a React.js front-end with a Spring Boot back-end and uses MongoDB for data storage.
 
 ---
 
 ## 🚀 Features
 
-- **Movies Collection**: Store and retrieve details about movies such as titles, genres, release dates, trailers, and more.
-- **Reviews Integration**: Add and manage user reviews linked to movies.
-- **RESTful Endpoints**: Access movie data via clean and structured API endpoints.
-- **Scalable Architecture**: Built with Spring Boot and MongoDB for robust and scalable back-end solutions.
-- **Environment Configuration**: Easily configurable through `.env` files for secure handling of credentials and settings.
+- **Movie Collection**: Browse detailed information about movies, including titles, genres, release dates, trailers, and posters.
+- **User Reviews**: Add and view user reviews for movies.
+- **Responsive Design**: Optimized for seamless viewing across desktop and mobile devices.
+- **RESTful APIs**: Clean and structured API endpoints for managing movie and review data.
+- **Environment Configuration**: Secure credential handling via `.env` files.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Backend Framework**: Spring Boot 3.4.1
-- **Database**: MongoDB with Spring Data MongoDB
-- **Language**: Java 17
-- **Environment Configuration**: `spring-dotenv`
+- **Front-end**: React.js, React Router, Bootstrap, Material-UI Carousel
+- **Back-end**: Spring Boot, Spring Data MongoDB, MongoTemplate
+- **Database**: MongoDB
+- **Environment Configuration**: `.env` files for secure handling of credentials and settings
+- **Additional Tools**: Axios, FontAwesome
 
 ---
 
 ## 📁 Project Structure
 
-```plaintext
+***
 eyuelwoldeh-fullstack-project/
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
+├── Front-end/
+│   ├── package.json
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   └── src/
+│       ├── App.js
+│       ├── components/
+│       │   ├── header/
+│       │   │   └── Header.js
+│       │   ├── hero/
+│       │   │   └── Hero.js
+│       │   ├── reviews/
+│       │   │   └── Reviews.js
+│       │   └── trailer/
+│       │       └── Trailer.js
 ├── src/
 │   ├── main/
 │   │   ├── java/com/artizanjw/movies/
@@ -46,7 +64,6 @@ eyuelwoldeh-fullstack-project/
 │       └── MoviesApplicationTests.java
 └── .mvn/wrapper/
     └── maven-wrapper.properties
-```
 ***
 
 ---
@@ -55,8 +72,8 @@ eyuelwoldeh-fullstack-project/
 
 1. Clone the repository:
 ***
-git clone https://github.com/your-username/movies-api.git
-cd movies-api
+git clone https://github.com/your-username/movie-gold-v1.git
+cd movie-gold-v1
 ***
 
 2. Set up your environment variables:
@@ -73,9 +90,11 @@ cd movies-api
 ./mvnw spring-boot:run
 ***
 
-4. Access the API at:
+4. Start the front-end:
 ***
-http://localhost:8080/api/v1/movies
+cd Front-end
+npm install
+npm start
 ***
 
 ---
@@ -101,3 +120,36 @@ Retrieve a list of all movies.
   }
 ]
 ***
+
+---
+
+### **POST /api/v1/reviews**
+Submit a new review for a movie.
+
+#### Example Request:
+***
+{
+  "reviewBody": "Amazing movie! Must-watch.",
+  "imdbId": "tt1234567"
+}
+***
+
+#### Example Response:
+***
+{
+  "id": "64d9f2c9a4b9e3d2a85c6f9c",
+  "body": "Amazing movie! Must-watch."
+}
+***
+
+---
+
+## 🤝 Contributions
+
+Contributions are welcome! Feel free to fork this repository and submit a pull request with your enhancements.
+
+---
+
+## 📜 License
+
+This project is licensed under the Apache License 2.0.
