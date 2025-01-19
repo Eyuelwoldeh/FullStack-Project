@@ -1,4 +1,4 @@
-# 🎬 Movie Gold V1
+# My Movie Review Site
 
 A full-stack application for managing and exploring movie data, including movie details, genres, reviews, and trailers. This project combines a React.js front-end with a Spring Boot back-end and uses MongoDB for data storage.
 
@@ -21,50 +21,6 @@ A full-stack application for managing and exploring movie data, including movie 
 - **Database**: MongoDB
 - **Environment Configuration**: `.env` files for secure handling of credentials and settings
 - **Additional Tools**: Axios, FontAwesome
-
----
-
-## 📁 Project Structure
-
-***
-eyuelwoldeh-fullstack-project/
-├── mvnw
-├── mvnw.cmd
-├── pom.xml
-├── Front-end/
-│   ├── package.json
-│   ├── public/
-│   │   ├── index.html
-│   │   ├── manifest.json
-│   │   └── robots.txt
-│   └── src/
-│       ├── App.js
-│       ├── components/
-│       │   ├── header/
-│       │   │   └── Header.js
-│       │   ├── hero/
-│       │   │   └── Hero.js
-│       │   ├── reviews/
-│       │   │   └── Reviews.js
-│       │   └── trailer/
-│       │       └── Trailer.js
-├── src/
-│   ├── main/
-│   │   ├── java/com/artizanjw/movies/
-│   │   │   ├── Movie.java
-│   │   │   ├── MovieController.java
-│   │   │   ├── MovieRepository.java
-│   │   │   ├── MovieService.java
-│   │   │   ├── MoviesApplication.java
-│   │   │   └── Review.java
-│   │   ├── resources/
-│   │   │   ├── application.properties
-│   │   │   └── .env.example
-│   └── test/java/com/artizanjw/movies/
-│       └── MoviesApplicationTests.java
-└── .mvn/wrapper/
-    └── maven-wrapper.properties
-***
 
 ---
 
