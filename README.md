@@ -24,14 +24,6 @@ A full-stack application for managing and exploring movie data, including movie 
 
 ---
 
-## 📦 Installation
-
-1. Clone the repository:
-***
-git clone https://github.com/your-username/movie-gold-v1.git
-cd movie-gold-v1
-***
-
 2. Set up your environment variables:
    - Create a `.env` file in the `src/main/resources` directory based on `.env.example`:
      ***
